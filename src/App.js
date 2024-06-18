@@ -1,12 +1,14 @@
-import './styles/App.css';
-import '@mantine/core/styles.css';
-import {FooterSocial} from './components/FooterSocial';
+import "./styles/App.css";
+import "@mantine/core/styles.css";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
 
 function App() {
   return (
     <>
+      <Header />
       <h1>MBKBOOK</h1>
-      <FooterSocial className="footer"/> 
+      <Footer className="footer" />
     </>
   );
 }

@@ -1,0 +1,70 @@
+import { Menu, Group, Center, Burger, Container, rem } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
+import { IconChevronDown } from '@tabler/icons-react';
+import {IconBrandAppgallery} from "@tabler/icons-react";
+import "../styles/Header.css";
+import {AppLogo} from './AppLogo';
+import {headerLinks} from '../data/data';
+
+export function Header() {
+  const [opened, { toggle }] = useDisclosure(false);
+
+  const items = headerLinks.map((link) => {
+    const menuItems = link.links?.map((item) => (
+      <Menu.Item key={item.link}>{item.label}</Menu.Item>
+    ));
+
+    if (menuItems) {
+      return (
+        <Menu key={link.label} trigger="hover" transitionProps={{ exitDuration: 0 }} withinPortal>
+          <Menu.Target>
+            <a
+              href={link.link}
+              className="link"
+              onClick={(event) => event.preventDefault()}
+            >
+              <Center>
+                <span className="linkLabel">{link.label}</span>
+                <IconChevronDown size="0.9rem" stroke={1.5} />
+              </Center>
+            </a>
+          </Menu.Target>
+          <Menu.Dropdown>{menuItems}</Menu.Dropdown>
+        </Menu>
+      );
+    }
+
+    // return (
+    //   <a
+    //     key={link.label}
+    //     href={link.link}
+    //     className={link}
+    //     onClick={(event) => event.preventDefault()}
+    //   >
+    //     {link.label}
+    //   </a>
+    // );
+  });
+
+  return (
+    <header className="header">
+      <Container size="2xl">
+        <div className="inner">
+          <AppLogo /> 
+          {/* <MantineLogo size={28} /> */}
+          <Group gap={44} visibleFrom="sm">
+            <button className="shopButton"> 
+            <IconBrandAppgallery 
+              style={{ width: rem(28), height: rem(28) }}
+              stroke={1.5}
+            />
+              <span>Boutique</span>
+            </button>
+            {items}
+          </Group>
+          <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" />
+        </div>
+      </Container>
+    </header>
+  );
+}

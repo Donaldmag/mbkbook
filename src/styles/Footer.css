@@ -24,17 +24,6 @@
     align-self: end;
   }
 
-  .logoText{
-    color: white;
-    font-size: 2rem;
-    line-height: 0;
-    font-weight: 600;
-  }
-
-  .spanLogoText{
-    color: pink;
-  }
-
   .copyrightText{
     color: #ccc;
     font-size: 0.9rem;

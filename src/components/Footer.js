@@ -1,15 +1,16 @@
-import { Anchor, Group, ActionIcon, rem  } from "@mantine/core";
+import { Anchor, Group, ActionIcon, rem } from "@mantine/core";
 import {
   IconBrandTwitter,
   IconBrandYoutube,
   IconBrandInstagram,
 } from "@tabler/icons-react";
+import { AppLogo } from "./AppLogo";
+import img1 from "../assets/images/androind-down.png";
+import img2 from "../assets/images/apple-down.png";
+import { links } from "../data/data";
 import "../styles/Footer.css";
-import img1 from '../assets/images/androind-down.png';
-import img2 from '../assets/images/apple-down.png';
-import {links} from '../data/data'
 
-export function FooterSocial() {
+export function Footer() {
   const items = links.map((link) => (
     <Anchor
       key={link.label}
@@ -22,7 +23,6 @@ export function FooterSocial() {
 
   return (
     <div className="footer">
-
       <div className="linkSection">
         <Group className="importantLinks" gap={24}>
           {items}
@@ -33,13 +33,11 @@ export function FooterSocial() {
           <img src={img2} alt="" height={48} />
         </Group>
       </div>
-      
+
       <div className="inner">
         {/* <MantineLogo size={28} /> */}
         <div className="logoTextDiv">
-          <h3 className="logoText">
-            <span className="spanLogoText">MBK</span>BOOK
-          </h3>
+          <AppLogo />
           <span className="copyrightText">
             @2024 MBKBOOK. All rights reserved{" "}
           </span>
