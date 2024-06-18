@@ -4,30 +4,17 @@ import {
   IconBrandYoutube,
   IconBrandInstagram,
 } from "@tabler/icons-react";
-// import { MantineLogo } from '@mantinex/mantine-logo';
-// import classes from '../styles/Footer.module.css';
 import "../styles/Footer.css";
 import img1 from '../assets/images/androind-down.png';
 import img2 from '../assets/images/apple-down.png';
-
-const links = [
-  { link: "#", label: "A propos" },
-  { link: "#", label: "FAQ" },
-  { link: "#", label: "Contact" },
-  { link: "#", label: "Terms of service" },
-  { link: "#", label: "Privacy policy" },
-];
+import {links} from '../data/data'
 
 export function FooterSocial() {
-  // const theme = useMantineTheme();
   const items = links.map((link) => (
     <Anchor
-      // c="dimmed"
       key={link.label}
       href={link.link}
-      // lh={1}
       onClick={(event) => event.preventDefault()}
-      // size="md"
     >
       {link.label}
     </Anchor>
