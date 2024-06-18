@@ -1,0 +1,81 @@
+.footer {
+    margin-top: rem(120px);
+    border-top: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    background-color: black;
+  }
+  
+  .inner, .linkSection {
+    margin: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    @media (max-width: $mantine-breakpoint-xs) {
+      flex-direction: column;
+    }
+  }
+  
+  .links {
+    @media (max-width: $mantine-breakpoint-xs) {
+      margin-top: var(--mantine-spacing-md);
+    }
+    align-self: end;
+  }
+
+  .logoText{
+    color: white;
+    font-size: 2rem;
+    line-height: 0;
+    font-weight: 600;
+  }
+
+  .spanLogoText{
+    color: pink;
+  }
+
+  .copyrightText{
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 0.8rem;
+    font-weight: 400;
+  }
+
+  .logoTextDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .linkSection{
+    padding-bottom:1rem;
+  }
+
+  .importantLinks a{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #f9f9f9 !important;
+  }
+
+  @media (max-width: 62em) {
+    .linkSection{
+        flex-direction: column;
+        align-items: start;
+    }
+    .inner{
+        flex-direction: column-reverse;
+    }
+    .importantLinks{
+        padding-bottom: 2rem;
+    }
+    .importantLinks a {
+        width: calc(100vw - 8rem);
+    }
+    .links{
+        align-self: start;
+    }
+    .logoTextDiv{
+        width: calc(100vw - 6rem);
+    }
+  }
