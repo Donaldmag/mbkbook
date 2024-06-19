@@ -6,7 +6,7 @@
     background-color: black;
   }
   
-  .inner, .linkSection {
+  .innerFooter, .linkSection {
     margin: 0 3rem;
     display: flex;
     justify-content: space-between;
@@ -52,7 +52,7 @@
         flex-direction: column;
         align-items: start;
     }
-    .inner{
+    .innerFooter{
         flex-direction: column-reverse;
     }
     .importantLinks{

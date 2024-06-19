@@ -49,10 +49,11 @@ export function Header() {
   return (
     <header className="header">
       <Container size="2xl">
-        <div className="inner">
+
+        <div className="innerHeader">
           <AppLogo /> 
-          {/* <MantineLogo size={28} /> */}
-          <Group gap={44} visibleFrom="sm">
+          
+          <Group gap={44}>
             <button className="shopButton"> 
             <IconBrandAppgallery 
               style={{ width: rem(28), height: rem(28) }}
@@ -60,10 +61,14 @@ export function Header() {
             />
               <span>Boutique</span>
             </button>
-            {items}
+            <Group visibleFrom="sm">
+              {items}
+            </Group>
           </Group>
-          <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" />
+
+          <Burger opened={opened} onClick={toggle} size="lg" hiddenFrom="sm" />
         </div>
+
       </Container>
     </header>
   );

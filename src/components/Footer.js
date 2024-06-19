@@ -34,7 +34,7 @@ export function Footer() {
         </Group>
       </div>
 
-      <div className="inner">
+      <div className="innerFooter">
         {/* <MantineLogo size={28} /> */}
         <div className="logoTextDiv">
           <AppLogo />

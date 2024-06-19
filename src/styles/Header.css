@@ -6,7 +6,7 @@
     background-color: #ccc;
   }
   
-  .inner {
+  .innerHeader {
     /* height: rem(56px); */
     display: flex;
     justify-content: space-between;
@@ -50,4 +50,13 @@
     margin: 0 0.5rem;
     color: white;
     font-size: 0.95rem;
+  }
+
+  @media (max-width: 62em) {
+    .innerHeader{
+      /* flex-direction: row; */
+    }
+    .shopButton{
+      min-width: 8rem;
+    }
   }
