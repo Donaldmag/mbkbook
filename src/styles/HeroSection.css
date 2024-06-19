@@ -1,0 +1,58 @@
+.wrapper {
+    position: relative;
+    /* padding-top: 180px;
+    padding-bottom: 130px; */
+    background-image: url(https://img.freepik.com/free-photo/front-view-girls-with-gen-z-makeup_23-2149451806.jpg?t=st=1718759920~exp=1718763520~hmac=c3ff0b81b67a7cebdc5a714310b3e0d2014857171ef01bc53d1b673df1fb06f7&w=996);
+    background-size: cover;
+    background-position: top;
+    /* min-height: 600px; */
+  
+    @media (max-width: 62rem) {
+      background-position: left;
+    }
+  }
+  
+  .inner {
+    min-height: 600px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+  }
+  
+  .title {
+    font-weight: 400;
+    font-size: 2.4rem;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    padding-left: var(--mantine-spacing-md);
+    padding-right: var(--mantine-spacing-md);
+    color: var(--mantine-color-white);
+    margin-bottom: var(--mantine-spacing-xs);
+    text-align: center;
+    font-family:
+      Greycliff CF,
+      var(--mantine-font-family);
+  
+    @media (max-width: 62rem) {
+      font-size: 1.8rem;
+    }
+  }
+  
+  .highlight {
+    /* color: var(--mantine-color-primary-4); */
+    color: pink;
+  }
+  
+  .description {
+    color: var(--mantine-color-gray-0);
+    text-align: center;
+  
+    @media (max-width: 62rem) {
+      font-size: var(--mantine-font-size-sm);
+    }
+  }

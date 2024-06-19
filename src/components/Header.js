@@ -25,7 +25,7 @@ export function Header() {
             >
               <Center>
                 <span className="linkLabel">{link.label}</span>
-                <IconChevronDown size="0.9rem" stroke={1.5} />
+                <IconChevronDown size="1.4rem" stroke={2.4} />
               </Center>
             </a>
           </Menu.Target>
@@ -33,17 +33,6 @@ export function Header() {
         </Menu>
       );
     }
-
-    // return (
-    //   <a
-    //     key={link.label}
-    //     href={link.link}
-    //     className={link}
-    //     onClick={(event) => event.preventDefault()}
-    //   >
-    //     {link.label}
-    //   </a>
-    // );
   });
 
   return (
@@ -61,7 +50,7 @@ export function Header() {
             />
               <span>Boutique</span>
             </button>
-            <Group visibleFrom="sm">
+            <Group visibleFrom="sm" gap={40}>
               {items}
             </Group>
           </Group>
