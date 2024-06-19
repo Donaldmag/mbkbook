@@ -1,0 +1,9 @@
+.buttonWrapper{
+    height: 64px; 
+    padding-top: 12px; 
+    padding-left: var(--mantine-spacing-xl);
+    padding-right: var(--mantine-spacing-lg);
+    border-radius: 0 180px 180px 0;
+    border:none;
+    background-color: white;
+}

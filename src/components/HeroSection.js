@@ -1,4 +1,5 @@
-import { Title, Text, Container, Button, Overlay } from '@mantine/core';
+import { Title, Text, Container, Overlay } from '@mantine/core';
+import {HeroSectionFrom} from '../components/HeroSectionForm';
 import '../styles/HeroSection.css'
 
 export function HeroSection() {
@@ -14,10 +15,11 @@ export function HeroSection() {
           </Text>
         </Title>
 
-        <Container size={560}>
+        <Container size={700}>
           <Text size="lg" className="description">
             en un clic, découvrez des professionnels proches de vous
           </Text>
+          <HeroSectionFrom/>
         </Container>
 
       </div>

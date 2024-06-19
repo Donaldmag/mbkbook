@@ -1,0 +1,7 @@
+.heroFormDiv{
+  display: inline-flex;
+  gap: 0;
+  align-items: center;
+  /* width: 650px; */
+  margin: 1.5rem 0;
+}
