@@ -5,7 +5,7 @@ import '../styles/HeroSection.css'
 export function HeroSection() {
   return (
     <div className="wrapper">
-      <Overlay color="#000" opacity={0.65} zIndex={1} />
+      <Overlay color="#000" opacity={0.35} zIndex={1} />
 
       <div className="inner">
         <Title className="title">

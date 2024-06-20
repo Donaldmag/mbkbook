@@ -55,7 +55,7 @@ export function Header() {
             </Group>
           </Group>
 
-          <Burger opened={opened} onClick={toggle} size="lg" hiddenFrom="sm" />
+          <Burger opened={opened} onClick={toggle} size="lg" hiddenFrom="sm"  />
         </div>
 
       </Container>
