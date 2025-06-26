@@ -1,5 +1,5 @@
 import { Title, Text, Container, Overlay } from '@mantine/core';
-import {HeroSectionFrom} from '../components/HeroSectionForm';
+import {HeroSectionFrom} from './HeroSectionForm';
 import '../styles/HeroSection.css'
 
 export function HeroSection() {

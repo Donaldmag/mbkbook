@@ -1,6 +1,7 @@
 # Barber Booking Application with E-commerce 
 
-![mbkbook](/src/assets/images/mbkbook.png).
+![mbkbook](/src/assets/images/mbkbook.png)
+![mbkbook-mobile](/src/assets/images/mbkbook-mobile.png)
 
 ## Technologies
 
