@@ -1,6 +1,25 @@
-# Getting Started with Create React App
+# Barber Booking Application with E-commerce 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![mbkbook](/src/assets/images/mbkbook.png)
+
+## Technologies
+
+React JS <br>
+Mantine UI <br>
+Tabler <br>
+
+## Techniques and functionnalities
+**Functionnalities** <br>
+- Authentification
+- Payment system (Cart, Checkout)
+- User session management (with coockies)
+- Advanced filtering and searching
+
+**Techniques** <br>
+- Composition (passing data through children component)
+- Key props and maping functions
+- Event handling (onClick, onChange, onSubmit)
+- Hooks (useRef, useState, useContext)
 
 ## Available Scripts
 
@@ -68,3 +87,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+demo: https://www.demosite01.magux.design

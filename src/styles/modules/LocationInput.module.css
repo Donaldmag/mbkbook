@@ -1,0 +1,28 @@
+.root {
+    position: relative;
+  }
+  
+  .input {
+    height: 64px; 
+    padding-top: 18px; 
+    padding-left: var(--mantine-spacing-xl);
+    border-radius: 0;
+    border:none;
+    min-width: 280px;
+
+  }
+
+  .input::placeholder {
+    color: var(--mantine-color-dark-7);
+    /* font-weight: 500; */
+  }
+  
+  .label {
+    position: absolute;
+    pointer-events: none;
+    font-size: var(--mantine-font-size-sm);
+    padding-left: var(--mantine-spacing-xl);
+    padding-top: calc(var(--mantine-spacing-sm) / 2);
+    z-index: 1;
+    color: var(--mantine-color-dark-2);
+  }
